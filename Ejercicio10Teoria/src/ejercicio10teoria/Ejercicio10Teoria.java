@@ -19,7 +19,7 @@ public class Ejercicio10Teoria {
     public static void main(String[] args) {
         int num;
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese 4 numeros");
+        System.out.println("Ingrese 4 numeros entre 1 y 20");
         for (int i = 0; i < 4; i++) {
             num = leer.nextInt();
             System.out.print("");
@@ -27,7 +27,7 @@ public class Ejercicio10Teoria {
             for (int j = 0; j < num; j++) {
             System.out.print("*");
         }
-            System.out.print("");
+           System.out.println(""); 
         }
     }
     
