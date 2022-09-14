@@ -18,29 +18,35 @@ public class Ejercicio7Extra {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int N, valMax=0, valMin=0, aux=0, contador=0;
+        int N,numero, valMax=0, valMin=0, aux=0, contador=0;
         float promedio, suma=0;
         Scanner leer = new Scanner (System.in);
         System.out.println("Indique cantidad de numeros a ingresar: ");
         N=leer.nextInt();
         int vector[]= new int [N];
         
-        while(){
-            if (valMax<N) {
-                valMax=N;
-                
-            }
-            if (valMin>N) {
-                valMin=N;
-                
-            }
+        while(contador != N){
             System.out.println("Siga ingresando numeros. Finalice con un numero negativo o 0");
-            N=leer.nextInt();
-            suma+=N;
-            contador++;
-            if (N==0) {
+            numero=leer.nextInt();
+            if (numero<0) {
                 break;
             }
+            if (valMax<numero) {
+                valMax=numero;
+                
+            }
+            if (contador==0){
+                valMin=numero;
+            }
+            if (valMin>numero) {
+                
+                valMin=numero;
+                
+            }
+            
+            suma+=numero;
+            contador++;
+            
         }
         System.out.println("El valor maximo es: "+valMax);
         System.out.println("El valor minmio es: "+valMin);

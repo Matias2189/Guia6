@@ -25,6 +25,9 @@ public class Ejercicio8Extra {
         
         do {
             numero=leer.nextInt();
+            if (numero < 0){
+                continue;
+            }
             if (numero%5==0) {
                 bandera=true;
                 break;
@@ -32,10 +35,10 @@ public class Ejercicio8Extra {
             }
             if (numero%2==0 && numero>0) {
                 contador2++;
-            }else{
+            }else if (numero%2!=0 && numero>0){
                 contador3++;
             }
-            
+        
         } while (bandera=true);
         System.out.println("La cantidad de numeros pares es: "+contador2);
         System.out.println("La cantidad de numeros impares es: "+contador3);

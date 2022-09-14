@@ -24,14 +24,14 @@ public class Ejercicio10Extra {
         int numero1 = (int)(Math.random()*10)+1;
         int numero2 = (int)(Math.random()*10)+1;
         int resultado = numero1*numero2;
-        //System.out.println(resultado); (para mostrar el resultado y ver si el programa rompe el bucle)
+        System.out.println(resultado); //(para mostrar el resultado y ver si el programa rompe el bucle)
         System.out.println("Adivina el resultado de la multiplicacion que realizo el programa...");
         respuesta=leer.nextInt();
-        do {
+        while (resultado!=respuesta){
             System.out.println("INCORRECTO! Intenta nuevamente:");
             respuesta=leer.nextInt();
             
-        } while (resultado!=respuesta);
+        } 
         System.out.println("ADIVINASTE!!!");
     }
     
